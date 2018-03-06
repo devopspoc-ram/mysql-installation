@@ -1,0 +1,6 @@
+- hosts: ec2-35-158-42-247.eu-central-1.compute.amazonaws.com
+  become: yes
+  vars_files:
+    - vars/main.yml
+  roles:
+    - { role: geerlingguy.mysql }
